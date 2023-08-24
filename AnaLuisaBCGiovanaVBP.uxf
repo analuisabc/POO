@@ -1,0 +1,67 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>400</x><y>200</y><w>400</w><h>260</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
+AnaLuisaBCGiovanaVBPAbstract::Professor/
+--
+-nome: String
+-nTurmas: int
+-salario: double
+--
++Professor(String nome, int nTurmas, double salario): ctor
++getNTurmas(): int
++setNTurmas(int nTurmas): void
++getSalario(): double
++setSalario(double salario): void
++getNome(): String
++setNome(String nome): void
++receberSalario(int nTurmas): void
++estudar(): void
++elaborarProvas(): Prova[ ]
++corrigirProva(Prova p): double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>90</y><w>170</w><h>130</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;150;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>20</y><w>270</w><h>60</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+AnaLuisaBCGiovanaVBPAbstract::Estudante
+--
+--
++estudar(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>70</y><w>170</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>150;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>600</y><w>410</w><h>70</h></coordinates><panel_attributes>AnaLuisaBCGiovanaVBPAbstract::ProfessorUniversitario
+--
+--
++ProfessorUniversitario(String nome, int nTurmas, double salario): ctor
++elaborarProvas(): Prova[ ]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>690</y><w>440</w><h>80</h></coordinates><panel_attributes>AnaLuisaBCGiovanaVBPAbstract::ProfessorDaEducacaoBasica
+--
+--
++ProfessorDaEducacaoBasica(String nome, int nTurmas, double salario): ctor
++elaborarProvas(): Prova[ ]</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>450</y><w>180</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>160;10;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>450</y><w>170</w><h>260</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;150;240</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1020</x><y>470</y><w>250</w><h>190</h></coordinates><panel_attributes>AnaLuisaBCGiovanaVBPAbstract::Prova
+--
+-questoes: String[ ]
+-respostas: String[ ]
+-nota: double
+--
++Prova(String[] questoes): ctor
++getQuestoes(): String[ ]
++setQuestoes(String[] questoes): void
++getRespostas(): String[ ]
++setRespostas(String[] respostas): void
++getNota(double nota): double
++setNota(double nota): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>990</x><y>210</y><w>250</w><h>190</h></coordinates><panel_attributes>AnaLuisaBCGiovanaVBPAbstract::Aluno
+--
+-nome: String
+-nMatricula: int
+--
++Aluno(String nome, int nMatricula): ctor
++getNome(): String
++setNome(String nome): void
++getMatricula(): int
++setMatricula(int nMatricula): void
++fazerProva(Prova prova): void
++estudar(): void
++fazerProva(Prova prova): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>1020</x><y>0</y><w>250</w><h>90</h></coordinates><panel_attributes>Note
+
+Alunas:
+- Ana Luísa de Bastos Chagas (202200491)
+- Giovana Vilas Boas do Prado (202200514)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>790</x><y>430</y><w>250</w><h>160</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;170;10;170;140;230;140</additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>70</y><w>200</w><h>160</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;180;140</additional_attributes></element><element><id>Relation</id><coordinates><x>1230</x><y>340</y><w>110</w><h>240</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;90;10;90;220;40;220</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>260</y><w>290</w><h>60</h></coordinates><panel_attributes>AnaLuisaBCGiovanaVBPAbstract::Principal
+--
+--
++static main(String[] args): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>210</x><y>30</y><w>350</w><h>70</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+AnaLuisaBCGiovanaVBPAbstract::FuncionarioAssalariado
+--
+--
++receberSalario(int nTurmas): void</panel_attributes><additional_attributes></additional_attributes></element></diagram>
